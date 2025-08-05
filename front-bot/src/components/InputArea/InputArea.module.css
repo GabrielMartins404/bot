@@ -1,0 +1,57 @@
+/* src/components/InputArea/InputArea.module.css */
+.inputForm {
+  display: flex;
+  padding: 16px;
+  background-color: #f3f4f6; /* Cinza claro */
+  border-top: 1px solid #e5e7eb; /* Borda cinza */
+}
+
+.textInput {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; /* Borda cinza */
+  font-size: 1rem;
+  outline: none; /* Remove o contorno padrão */
+}
+
+.textInput:focus {
+  border-color: #3b82f6; /* Borda azul ao focar */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Sombra de foco azul */
+}
+
+.sendButton {
+  margin-left: 12px;
+  padding: 12px 20px; /* Ajuste o padding para ser mais consistente */
+  background-color: #2563eb; /* Azul um pouco mais escuro */
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sendButton:hover {
+  background-color: #1d4ed8; /* Azul ainda mais escuro no hover */
+}
+
+.sendIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.sendText {
+  margin-left: 8px;
+  display: none; /* Esconde o texto por padrão */
+}
+
+/* Para telas maiores que 640px (sm no Tailwind) */
+@media (min-width: 640px) {
+  .sendText {
+    display: inline; /* Mostra o texto em telas maiores */
+  }
+}

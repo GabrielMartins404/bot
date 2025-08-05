@@ -1,0 +1,39 @@
+/* src/App.module.css */
+.appContainer {
+  /* Mantenha essas propriedades para centralizar o contêiner se ele não for 100% */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* O appContainer deve preencher a tela inteira */
+  width: 100vw; /* O appContainer deve preencher a largura da tela */
+  background-color: #f0f2f5;
+  align-items: center; /* Se o chatContainer tiver max-width, ele será centralizado */
+  justify-content: center; /* Se o chatContainer tiver altura menor que 100%, ele será centralizado verticalmente */
+  padding: 0; /* Remova o padding para garantir que o chat ocupe 100% */
+  margin: 0; /* Remova margens padrão do body ou html, se houver */
+  box-sizing: border-box;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* Ocupa 100% da largura da viewport */
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  max-width: none; /* Remova qualquer limite de largura máxima */
+  max-height: none; /* Remova qualquer limite de altura máxima, se houver */
+  border-radius: 0; /* Remova o border-radius para que ele ocupe as bordas da tela */
+  box-shadow: none; /* Remova a sombra para uma aparência de tela cheia */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.chatHeader {
+  /* ... mantenha os estilos do cabeçalho ... */
+  padding: 16px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

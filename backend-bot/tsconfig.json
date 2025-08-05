@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",                          /* Versão do JavaScript gerado */
+    "module": "commonjs",                        /* Sistema de módulos */
+    "lib": ["ES2021"],                            /* Bibliotecas do JS incluídas */
+    "rootDir": "./src",                          /* Onde está seu código TS */
+    "outDir": "./dist",                          /* Onde o JS compilado vai ficar */
+    "baseUrl": "./src",                          /* Base para imports absolutos */
+    "paths": {
+      "@/controllers/*": ["controllers/*"],      /* Ex: import ... from '@/controllers/...' */
+      "@/services/*": ["services/*"],
+      "@/config/*": ["config/*"],
+      "@/utils/*": ["utils/*"]
+    },
+    "esModuleInterop": true,                     /* Melhora a compatibilidade entre módulos */
+    "forceConsistentCasingInFileNames": true,    /* Evita erros de case em nomes de arquivos */
+    "strict": true,                              /* Habilita todas as checagens estritas */
+    "skipLibCheck": true,                        /* Pula a checagem de tipos em arquivos de declaração */
+    "experimentalDecorators": true,              /* Habilita o uso de Decorators (@Controller, etc) */
+    "emitDecoratorMetadata": true              /* Necessário para injeção de dependência */
+  },
+  "include": ["src/**/*"],                       /* Quais arquivos o TS deve compilar */
+  "exclude": ["node_modules", "dist"]            /* Quais pastas ignorar */
+}

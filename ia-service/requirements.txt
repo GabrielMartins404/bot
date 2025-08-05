@@ -1,0 +1,29 @@
+# Web Framework
+Flask==3.1.0
+Gunicorn
+
+# LangChain Core e Ecossistema (versões removidas para resolução automática)
+langchain
+langchain_community
+langchain_core
+langgraph
+langchain_text_splitters
+langchain_openai
+langchain_postgres
+
+# Modelagem e Validação de Dados
+pydantic==2.10.3
+
+# Banco de Dados Relacional (ORM)
+SQLAlchemy
+SQLModel
+psycopg2-binary
+
+# Utilitários
+python-dotenv==1.0.1
+numpy
+Requests==2.32.3
+pypdf
+
+# A biblioteca do Redis pode ser removida se a migração for completa
+# redis==4.5.1
