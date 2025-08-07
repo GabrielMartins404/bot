@@ -24,6 +24,11 @@ python-dotenv==1.0.1
 numpy
 Requests==2.32.3
 pypdf
+pymupdf
 
+#Banco vetoria QDRANT
+qdrant-client
+langchain-qdrant
+langchain-huggingface
 # A biblioteca do Redis pode ser removida se a migração for completa
 # redis==4.5.1

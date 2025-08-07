@@ -2,7 +2,6 @@ import { Server } from '@overnightjs/core';
 import express, { Application } from 'express';
 import { config } from './config';
 import { AiController } from './controllers/AiController';
-import bodyParser from 'body-parser';
 
 export class SetupServer extends Server {
   //Adiociona o construtor para definir porta 3000 por padrão
